@@ -1,0 +1,269 @@
+
+    /* Estilos generales */
+    * {
+      box-sizing: border-box;
+    }
+    .menu-container {
+      max-height: 100px; /* Ajusta el valor según tus necesidades */
+      margin: 0 auto; /* Centra el menú horizontalmente */
+      padding: 10px; /* Ajusta el relleno del menú */
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    main {
+      max-width: 960px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 1px solid #cccccc;
+      border-radius: 5px;
+    }
+    
+    header img {
+      width: 50px;
+      padding: 1%;
+    }
+    
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    nav ul li {
+      display: inline;
+    }
+    
+    nav ul li a {
+      color: #ffffff;
+      text-decoration: none;
+      padding: 10px;
+    }
+    
+    /* Estilos del menú */
+    .menu {
+      background-color: black;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+    }
+    
+    .menu a {
+      color: #fff;
+      text-decoration: none;
+      padding: 5px 10px;
+    }
+    
+    /* Estilos de las secciones */
+    .section {
+      padding: 20px;
+      margin: 0;
+      padding: 0;
+      border:  solid white;
+      
+    }
+    article{
+        padding: 01%;
+        margin: 20px auto;
+      padding: 20px;
+      }
+  
+    h2 {
+      text-align: center;
+    }
+    p{
+      text-align: justify;
+    }
+    ul li {
+      text-align: justify;
+    }
+    
+    nav ul li a:hover {
+      background-color: #666666;
+    }
+    
+    /* Estilos específicos de cada sección */
+    .renacimiento {
+      background-color: #f2f2f2;
+      text-decoration: none;
+      padding: 10px;
+    }
+    
+    footer {
+      background-color: #333333;
+      color: #ffffff;
+      text-align: center;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      padding: 1%;
+    }
+    input:invalid {
+      background-color: #f0b2b2;
+      
+    }
+    .edadmedia {
+      background-color: #eaeaea;
+     
+    }
+    .edadmedia h2 {
+      font-family: 'Playfair Display', serif;
+     
+    }
+    .edadmoderna{
+      background-color: #f2f2f2;
+    }
+    .edadcontepranea{
+      background-color: #eaeaea;
+    }
+    
+    
+    .botones {
+      align-items: center;
+    }
+    .ser {
+      display: flex;
+      align-items: center;
+    }
+    
+    .ser img {
+      flex-shrink: 0; /* Evita que la imagen se comprima */
+      margin-right: 1%; /* Agrega un margen entre la imagen y el texto */
+      max-width: 20%; /* Establece el tamaño máximo de la imagen */
+      border-radius: 50%; /* Hace que la imagen sea redonda */
+      float: left; /* Alinea la imagen a la izquierda */
+      margin-bottom: 10px; /* Espacio adicional entre la imagen y el texto */
+    }
+    
+    .ser p  {
+      margin-left: 25%; /* Elemento de texto se mueve a la derecha de la imagen */
+      text-align: justify;
+    }
+    .ser  ul li {
+      margin-left: 25%; /* Elemento de texto se mueve a la derecha de la imagen */
+      text-align: justify;
+    }
+
+.play h2{
+  display: flex;
+  justify-content: center;
+  
+}
+.section1{
+  padding: 0 10px 10px 10px;
+  border-radius: 8px;
+
+}
+
+   .play button{
+        height: 100px ; 
+        width: 100px ;      
+       font-size: 40px;
+       max-width: 100%;
+       align-items: center
+  }
+  .section2{
+   width:250px;
+   height: 400px;
+   padding:0 20px;
+   align-items: center;
+
+        }
+.estadisticas{
+     border: 1px solid white;
+     height :105px;
+     border-radius: 8px;
+     padding: 8px 20px;
+     box-sizing: border-box;
+}
+.ver img{
+  width: 100%;
+}
+
+
+    
+    
+   
+    
+  @media only screen and (max-width: 400px) {
+    /* Estilos para pantallas más pequeñas, como celular */
+    
+    nav ul li {
+      margin-bottom: 10px;
+    }
+  
+    main {
+      margin-bottom: 60px; /* Ajusta el margen inferior para dejar espacio al pie de página */
+      width: 100%; /* Ocupa todo el ancho disponible en pantallas más pequeñas */
+      overflow-x: hidden; /* Evita el desplazamiento horizontal */
+    }
+  
+    footer {
+      /* Establece el posicionamiento y tamaño del footer */
+      position: fixed;
+      bottom: 0;
+      height: 60px;
+      width: 100%; /* Ocupa todo el ancho disponible en pantallas más pequeñas */
+    }
+  
+    .play main {
+      width: 100%; /* Ocupa todo el ancho disponible en pantallas más pequeñas */
+      margin: 30px;
+      flex-direction: column; /* Cambia el diseño a columna en pantallas más pequeñas */
+      align-items: center;
+    }
+  
+    .section1 {
+      background-color: rgba(0, 0, 0, 0.2);
+     
+    }
+  
+    .play button {
+      height: 60px;
+      width: 50px;
+      color: black;
+     
+    }
+  
+    .section2 {
+      align-items: center;
+      width: 100%; /* Ocupa todo el ancho disponible en pantallas más pequeñas */
+      height: auto; /* Ajusta la altura automáticamente en pantallas más pequeñas */
+      padding: 0 20px; /* Ajusta el espaciado interno */
+      margin-top: 10px; /* Agrega un espacio entre el contenido principal y las estadísticas */
+    }
+  
+    .estadisticas {
+      border: 1px solid white;
+      height: auto; /* Ajusta la altura automáticamente en pantallas más pequeñas */
+      border-radius: 8px;
+      padding: 8px 20px;
+      box-sizing: border-box;
+      margin-top: 10px; /* Agrega un espacio entre el contenido principal y las estadísticas */
+    }
+  
+    img {
+      max-width: 100%; /* Ajusta la imagen para que se adapte al ancho de la pantalla */
+      height: auto; /* Ajusta la altura automáticamente en pantallas más pequeñas */
+    }
+    .play {
+      background: rgb(0, 0, 0);
+      background: radial-gradient(circle, rgb(63, 251, 179)  rgb(168, 130, 130));
+      font-family: sans-serif;
+      color: azure;
+  } 
+   .play button{
+    height: 80px ; 
+    width: 80px ;      
+   font-size: 40px;
+   max-width: 100%;
+       align-items: center
+}
+  }  

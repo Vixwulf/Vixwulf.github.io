@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Te lo cuento</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="juego/juegoanda.js"> </script>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid navbar-dark bg-dark">
+        <img src="logo/logo.png" alt="logo">
+        <a class="navbar-brand" href="index.html">Te lo cuento</a>
+  
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="tiempo.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="parte.html">Ser Parte</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Edad Media
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="media.html">Gotico</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Edad moderna
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="renacimiento.html">El Renacimiento</a></li>
+                <li><a class="dropdown-item" href="manierismo.html">Manierismo</a></li>
+                <li><a class="dropdown-item" href="barroco.html">Barroco y Rococo</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="juego/memoria.html">Juego</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Edad Conteporanea
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="neoclasico.html">Neoclasico</a></li>
+                <li><a class="dropdown-item" href="romanticismo.html">Romanticismo</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="creador.html">Creador</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <article>
+      <div class="ser">
+      <section>
+        <h2>¿Ser parte?</h2>
+        <img src="logo/parte.jpg" alt="foto conteporanea perfil">
+        <p>Te gustaria ser parte de este blog de resumenes de historia </p>
+        <p>Si la respuesta es si nos gustaria presentarte los siguientes requisitos </p>
+        <ul>
+          <li>debes haber estudiado almenos una materia de historia</li>
+          <li>Esto Se hace por justo propio no re recaude atravez de la pagina </li>
+          <li>*mandanos un gmail para contactarte* </li>
+        </ul>
+      </section>
+    </div>
+        <h2>Contactanos</h2>
+        </article>
+        <article>
+          <div class="card">
+            <div class="card-header">
+              -
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Sus datos</h5>
+              <p class="card-text">
+                <div class="row">
+                <div class="col">
+                  <form action="procesar_form.php" method="post" name="formulario" id="formulario">
+                    <div class="row">
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="First name" aria-label="First name" name="nombre" id="nombre">
+                      </div>
+                      <div class="col"> 
+                        <input type="text" class="form-control" placeholder="Last name" aria-label="Last name" name="apellido" id="apellido">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-auto">
+                        <label for="email" class="col-form-label col-form-label-lg">Email</label>
+                      </div>
+                      <div class="col-sm-10">
+                        <input type="email" class="form-control form-control-lg" name="email" id="email" placeholder="Enter your email">
+                      </div> 
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <input type="submit" value="Submit" id="btn-enviar" />
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>     
+        </article>
+    </main>
+    <footer>
+      <ul class="nav navbar-dark bg-dark" data-bs-theme="dark">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="creador.html">Creadora</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="parte.html">Ser Parte</a>
+        </li>
+        <li class="nav-item">
+        </li>
+      </ul>
+    </footer>
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+  </html>

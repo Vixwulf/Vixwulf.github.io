@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Te lo cuento</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../estilo.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+<script src="juegoanda.js"> </script>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid navbar-dark bg-dark">
+        <img src="../logo/logo.png" alt="logo">
+        <a class="navbar-brand" href="../index.html">Te lo cuento</a>
+  
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../tiempo.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../parte.html">Ser Parte</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Edad Media
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../media.html">Gotico</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Edad moderna
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../renacimiento.html">El Renacimiento</a></li>
+                <li><a class="dropdown-item" href="../manierismo.html">Manierismo</a></li>
+                <li><a class="dropdown-item" href="../barroco.html">Barroco y Rococo</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="../memoria.html">Juego</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Edad Conteporanea
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="../neoclasico.html">Neoclasico</a></li>
+                <li><a class="dropdown-item" href="../romanticismo.html">Romanticismo</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../creador.html">Creador</a>
+            </li>
+          </ul>
+        
+        </div>
+      </div>
+    </nav>
+
+</header>
+<main>
+    <div class="card text-center">
+    <section class="play">
+    <div class="card text-dark bg-light col d-flex align-items-center justify-content-center " >
+        <div class="card-header"> ¿piensa rapido? </div>
+        <div class="card-body">
+          <h5 class="card-title">Juego de memoria</h5>
+            <table class="card-text play">
+            <tr>
+              <td><button class="ver"  id="0" onclick="destapar(0)"></button></td>
+              <td><button  class="ver" id="1" onclick="destapar(1)"></button></td>
+              <td><button class="ver" id="2" onclick="destapar(2)"></button></td>
+              <td><button class="ver" id="3" onclick="destapar(3)"></button></td>
+            </tr>
+            <tr>
+              <td><button class="ver" id="4" onclick="destapar(4)"></button></td>
+              <td><button class="ver" id="5" onclick="destapar(5)"></button></td>
+              <td><button class="ver" id="6" onclick="destapar(6)"></button></td>
+              <td><button class="ver" id="7" onclick="destapar(7)"></button></td>
+            </tr>
+            <tr>
+              <td><button class="ver"  id="8" onclick="destapar(8)"></button></td>
+              <td><button class="ver" id="9" onclick="destapar(9)"></button></td>
+              <td><button class="ver" id="10" onclick="destapar(10)"></button></td>
+              <td><button class="ver" id="11" onclick="destapar(11)"></button></td>
+            </tr>
+            <tr>
+              <td><button class="ver" id="12" onclick="destapar(12)"></button></td>
+              <td><button class="ver" id="13" onclick="destapar(13)"></button></td>
+              <td><button class="ver" id="14" onclick="destapar(14)"></button></td>
+              <td><button class="ver" id="15" onclick="destapar(15)"></button></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+    </div>
+  
+        <section class="play">
+        <div class="card text-white bg-dark col d-flex align-items-center justify-content-center " >
+           
+              <div class="section2"><p class="card-text">
+                <h2 id="aciertos" class="estadisticas"> aciertos 0</h2>
+                <h2 id="movimientos" class="estadisticas"> Movimientos: 0</h2>
+              </div>
+           </div>
+   </section>
+  </main>
+  <footer>
+    <ul class="nav navbar-dark bg-dark" data-bs-theme="dark">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="../creador.html">Creadora</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../index.html">Nosotros</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="../parte.html">Ser Parte</a>
+      </li>
+      <li class="nav-item">
+      </li>
+    </ul>
+  </footer>
+</body>
+</html>
